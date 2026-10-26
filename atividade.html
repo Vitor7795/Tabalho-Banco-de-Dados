@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Sistema CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Cadastros</h1>
+
+        <form id="itemForm">
+            <input type="hidden" id="itemId">
+            <input type="text" id="nome" placeholder="Nome completo" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="text" id="telefone" placeholder="Telefone">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <button type="submit" id="btnSalvar">Adicionar Registro</button>
+        </form>
+
+        <h2>Lista de Registros</h2>
+        <div id="listaItens"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
